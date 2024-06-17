@@ -1,0 +1,6 @@
+@Mindobox.ShapeAreaCalculator.Web.Api_HostAddress = http://localhost:5030
+
+GET {{Mindobox.ShapeAreaCalculator.Web.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
