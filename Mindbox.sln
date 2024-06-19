@@ -19,13 +19,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mindbox.ShapeAreaCalculator.Infrastructure", "Mindbox.ShapeAreaCalculator.Infrastructure\Mindbox.ShapeAreaCalculator.Infrastructure.csproj", "{418CEF4D-B9E9-49E6-BD21-B392F41B5E72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindbox.ShapeAreaCalculator.Application", "Mindbox.ShapeAreaCalculator.Application\Mindbox.ShapeAreaCalculator.Application.csproj", "{1E5A5C86-DF86-4B5D-83EF-10B48CA68198}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mindbox.ShapeAreaCalculator.Application", "Mindbox.ShapeAreaCalculator.Application\Mindbox.ShapeAreaCalculator.Application.csproj", "{1E5A5C86-DF86-4B5D-83EF-10B48CA68198}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindbox.ShapeAreaCalculator.Common", "Mindbox.ShapeAreaCalculator.Common\Mindbox.ShapeAreaCalculator.Common.csproj", "{CF8E3E1A-6BF1-4140-9D9E-8F7B8C0B1EFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mindbox.ShapeAreaCalculator.Common", "Mindbox.ShapeAreaCalculator.Common\Mindbox.ShapeAreaCalculator.Common.csproj", "{CF8E3E1A-6BF1-4140-9D9E-8F7B8C0B1EFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindbox.ShapeAreaCalculator.Domain", "Mindbox.ShapeAreaCalculator.Domain\Mindbox.ShapeAreaCalculator.Domain.csproj", "{56EF067A-BB37-4E48-B5FD-A971D75BD9F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mindbox.ShapeAreaCalculator.Domain", "Mindbox.ShapeAreaCalculator.Domain\Mindbox.ShapeAreaCalculator.Domain.csproj", "{56EF067A-BB37-4E48-B5FD-A971D75BD9F7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mindbox.ShapeAreaCalculator.Persistence", "Mindbox.ShapeAreaCalculator.Persistence\Mindbox.ShapeAreaCalculator.Persistence.csproj", "{0D324F40-2103-4500-BD7D-0FB54F2537A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mindbox.ShapeAreaCalculator.Persistence", "Mindbox.ShapeAreaCalculator.Persistence\Mindbox.ShapeAreaCalculator.Persistence.csproj", "{0D324F40-2103-4500-BD7D-0FB54F2537A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.UnitTests", "Application.UnitTests\Application.UnitTests.csproj", "{61F2912F-2BEF-4FA5-B576-AD421D65B109}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.UnitTests", "Domain.UnitTests\Domain.UnitTests.csproj", "{D610E779-F33F-4B82-87DC-17B4C250E7C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Api.Integration.UnitTests", "Web.Api.Integration.UnitTests\Web.Api.Integration.UnitTests.csproj", "{F01CC4F5-1C9B-459A-94C4-D9E3610D7431}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +63,18 @@ Global
 		{0D324F40-2103-4500-BD7D-0FB54F2537A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D324F40-2103-4500-BD7D-0FB54F2537A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D324F40-2103-4500-BD7D-0FB54F2537A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61F2912F-2BEF-4FA5-B576-AD421D65B109}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61F2912F-2BEF-4FA5-B576-AD421D65B109}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61F2912F-2BEF-4FA5-B576-AD421D65B109}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61F2912F-2BEF-4FA5-B576-AD421D65B109}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D610E779-F33F-4B82-87DC-17B4C250E7C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D610E779-F33F-4B82-87DC-17B4C250E7C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D610E779-F33F-4B82-87DC-17B4C250E7C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D610E779-F33F-4B82-87DC-17B4C250E7C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F01CC4F5-1C9B-459A-94C4-D9E3610D7431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F01CC4F5-1C9B-459A-94C4-D9E3610D7431}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F01CC4F5-1C9B-459A-94C4-D9E3610D7431}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F01CC4F5-1C9B-459A-94C4-D9E3610D7431}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +89,9 @@ Global
 		{CF8E3E1A-6BF1-4140-9D9E-8F7B8C0B1EFE} = {4117CA19-8DCB-4F90-95CB-5E3341F48CC6}
 		{56EF067A-BB37-4E48-B5FD-A971D75BD9F7} = {4117CA19-8DCB-4F90-95CB-5E3341F48CC6}
 		{0D324F40-2103-4500-BD7D-0FB54F2537A1} = {8DE30020-C70C-4ACC-A3CF-4C5B58B34EC7}
+		{61F2912F-2BEF-4FA5-B576-AD421D65B109} = {8D024374-FBE8-41ED-A1B2-C126DBE1AA01}
+		{D610E779-F33F-4B82-87DC-17B4C250E7C9} = {8D024374-FBE8-41ED-A1B2-C126DBE1AA01}
+		{F01CC4F5-1C9B-459A-94C4-D9E3610D7431} = {8D024374-FBE8-41ED-A1B2-C126DBE1AA01}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9C9E6AF-FE99-47A7-9B6F-518D25FD49C4}
