@@ -1,19 +1,11 @@
 using Microsoft.AspNetCore.Mvc.Testing;
-using Microsoft.VisualStudio.TestPlatform.TestHost;
-using Mindbox.ShapeAreaCalculator.Web.Api.Controllers;
-using Newtonsoft.Json;
 using System.Net.Http.Json;
 
 namespace Web.Api.Integration.UnitTests
 {
-    public class ApiControllerTests : IClassFixture<WebApplicationFactory<Program>>
+    public class ApiControllerTests(WebApplicationFactory<Program> factory) : IClassFixture<WebApplicationFactory<Program>>
     {
-        private readonly HttpClient _client;
-
-        public ApiControllerTests(WebApplicationFactory<Program> factory)
-        {
-            _client = factory.CreateClient();
-        }
+        private readonly HttpClient _client = factory.CreateClient();
 
         [Fact]
         public async Task GetCircleArea_ValidRadius_ShouldReturnCorrectArea()
