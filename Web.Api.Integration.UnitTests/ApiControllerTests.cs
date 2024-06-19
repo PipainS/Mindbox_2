@@ -21,7 +21,7 @@ namespace Web.Api.Integration.UnitTests
             var area = await response.Content.ReadFromJsonAsync<double>();
 
             // Assert
-            Assert.Equal(Math.PI * Math.Pow(radius, 2), area, 5);
+            Assert.Equal(Math.PI * radius * radius, area, 5);
         }
 
         [Fact]
