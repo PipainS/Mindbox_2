@@ -8,9 +8,12 @@ namespace Mindbox.ShapeAreaCalculator.Web.Api.Context
     {
         public static void RegisterServices(IServiceCollection services)
         {
-            services.AddScoped<ITriangleAreaCalculator, TriangleAreaCalculator>();
-            services.AddScoped<ICircleAreaCalculator, CircleAreaCalculator>();
-            services.AddScoped<ShapeAreaCalculatorService>();
+            services.AddSingleton<IShapeFactory, ShapeFactory>();
+            services.AddTransient<ICircleValidationService, CircleValidationService>();
+            services.AddTransient<ITriangleValidationService, TriangleValidationService>();
+            services.AddTransient<IShapeAreaCalculatorService, ShapeAreaCalculatorService>();
+            services.AddTransient<ICircleAreaCalculator, CircleAreaCalculator>();
+            services.AddTransient<ITriangleAreaCalculator, TriangleAreaCalculator>();
         }
     }
 }

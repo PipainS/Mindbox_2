@@ -6,7 +6,7 @@ namespace Mindbox.ShapeAreaCalculator.Application.Services.Impl.ShapeServices
     {
         public double CalculateArea(Circle circle)
         {
-            return Math.PI * Math.Pow(circle.Radius, 2);
+            return Math.PI * Math.Pow(circle.Radius, 2); 
         }
     }
 }
