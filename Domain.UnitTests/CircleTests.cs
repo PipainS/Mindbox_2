@@ -1,7 +1,6 @@
 using Mindbox.ShapeAreaCalculator.Application.Services;
 using Mindbox.ShapeAreaCalculator.Application.Services.Impl;
 using Mindbox.ShapeAreaCalculator.Domain.enums;
-using Mindbox.ShapeAreaCalculator.Domain.Models;
 
 namespace Domain.UnitTests
 {

@@ -1,22 +1,11 @@
 ﻿using Mindbox.ShapeAreaCalculator.Domain.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Mindbox.ShapeAreaCalculator.Application.Services.Impl
 {
-    public class ShapeFactory : IShapeFactory
+    public class ShapeFactory(ICircleValidationService circleValidationService, ITriangleValidationService triangleValidationService) : IShapeFactory
     {
-        private readonly ICircleValidationService _circleValidationService;
-        private readonly ITriangleValidationService _triangleValidationService;
-
-        public ShapeFactory(ICircleValidationService circleValidationService, ITriangleValidationService triangleValidationService)
-        {
-            _circleValidationService = circleValidationService;
-            _triangleValidationService = triangleValidationService;
-        }
+        private readonly ICircleValidationService _circleValidationService = circleValidationService;
+        private readonly ITriangleValidationService _triangleValidationService = triangleValidationService;
 
         public Circle CreateCircle(double radius)
         {
