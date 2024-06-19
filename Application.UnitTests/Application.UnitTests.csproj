@@ -22,4 +22,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Mindbox.ShapeAreaCalculator.Application\Mindbox.ShapeAreaCalculator.Application.csproj" />
+    <ProjectReference Include="..\Mindbox.ShapeAreaCalculator.Domain\Mindbox.ShapeAreaCalculator.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

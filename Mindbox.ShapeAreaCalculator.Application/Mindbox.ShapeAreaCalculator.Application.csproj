@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Mindbox.ShapeAreaCalculator.Domain\Mindbox.ShapeAreaCalculator.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
